@@ -111,7 +111,7 @@ const App = () => {
         
         // Check file type
         const fileType = files[0].name.split('.').pop().toLowerCase();
-        if (!['doc', 'docx'].includes(fileType)) {
+        if (!['doc', 'docx', 'png'].includes(fileType)) {
           setErrors(prev => ({
             ...prev,
             bookFile: "Only .doc and .docx files are accepted"
